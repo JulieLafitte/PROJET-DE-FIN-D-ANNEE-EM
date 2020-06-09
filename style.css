@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+}
+
+.left_bar{
+    height: 100vh;
+    width: 10%;
+    background-color: black;
+}
+
+.main_part{
+    height: 100vh;
+    width: 90%;
+    background-color: grey;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+}
+
+nav{
+    margin-top: 50px;
+    margin-right: 100px;
+    flex-wrap: wrap; 
+    text-align: right;
+    line-height: 50px;
+    
+}
+
+nav p{
+    color: white;
+    font-size: 30px;
+
+}
+
+h2{
+    font-size: 100px;
+}
+
+.the_weeknd{
+    height: 100vh;
+    width: 100%;
+    border: solid 3px red;
+    display: flex;
+    position:relative;
+    color: lightgrey;
+}
+
+.the_weeknd h2{
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+}
+
+.the_weeknd_image_container{
+    height: 500px;
+    width: 500px;
+    background-color: lightgrey;
+    transform: translate(25%, 25%);
+}
+
+.the_weeknd img{
+    height: 300px;
+    width: 300px;
+}
+
+.album-container{
+    width: 50%;
+    height: 100%;
+}
+
+.album{
+    height: 100vh;
+    width: 100%;
+    border: solid 3px lightpink;
+    position: relative;
+    display: flex;
+    color: lightgrey;
+}
+
+.album_image_container{
+    height: 500px;
+    width: 500px;
+    background-color: lightgrey;
+    transform: translate(25%, 25%);
+}
+
+.album img{
+    height: 300px;
+    width: 300px;
+}
+
+.album h2{
+    position: absolute;
+    bottom: 10px;
+    right: 65%;
+}
+.track{
+    width: 50%;
+    text-align: center;
+}
+
+.track h3{
+ font-size:40px;
+ margin-top:10%;
+ margin-bottom: 55px;
+}
+
+.track li{
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.tour{
+    height: 100vh;
+    width: 100%;
+    border: solid 3px coral;
+    position: relative;
+    color: lightgrey;
+}
+
+.tour h2{
+    position: absolute;
+    bottom: 10px;
+    right: 70%;
+}
+
+.tour_container{
+    width: 80%;
+    height: 70vh;
+    padding-top:15vh;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.date_container{
+    height: 20vh;
+    width: 40%;
+    border: solid 3px red;
+   
+}
+
+.date{
+    font-size: 50px;
+}
+
+.place{
+    font-size: 30px;
+}
+
+.shop{
+    height: 100vh;
+    width: 100%;
+    border: solid 3px lightblue;
+    position: relative;
+    color: lightgrey;
+}
+
+.shop_preview{
+    position: absolute;
+    height: 306px;
+    width: 90%;
+    top: 25%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop_preview img{
+    min-height: 300px;
+    min-width: 300px;
+    border: solid red 3px;
+    background-color: lightgrey;
+}
+
+.shop h2{
+    position: absolute;
+    bottom: 10px;
+    right: 70%;
+}
+
+.insta{
+    height: 100vh;
+    width: 100%;
+    border: solid 3px purple;
+    position: relative;
+    color: lightgrey;
+}
+
+.insta h2{
+    position: absolute;
+    bottom: 10px;
+    right: 60%;
+}
+
+.insta_latest_post{
+    position: absolute;
+    height: 306px;
+    width: 90%;
+    top: 25%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.insta_latest_post img{
+    min-height: 300px;
+    min-width: 300px;
+    border: solid red 3px; 
+    background-color: lightgrey;
+}
+
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+}
+
+footer p{
+    font-size: 50px;
+    background-color: white;
+}
