@@ -1,32 +1,46 @@
 *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    
+    list-style:none;
 }
 
-body{
+html{
+    scroll-behavior: smooth;
+}
+
+.row{
+    margin:0px;
+}
+
+.white{
+    height: 110vh;
+    
+}
+
+.black{
+    height: 110vh;
     background-color: black;
 }
 
-header{
+.header{
+    background-color: lightgray;
+}
+
+.icones{
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.left_bar{
-    height: 100vh;
-    width: 10%;
-    background-color: black;
+.icones img{
+    height: 50px;
+    width: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
-.main_part{
-    height: 100vh;
-    width: 90%;
-    background-color: grey;
-}
-
-h1{
-    color: white;
-    font-size: 40px;
+.logo-header img{
+    height: 200px;
+    width: 200px;
 }
 
 nav{
@@ -34,202 +48,138 @@ nav{
     margin-right: 100px;
     flex-wrap: wrap; 
     text-align: right;
-    line-height: 50px;
-    
+    line-height: 50px; 
 }
 
 nav p{
     color: white;
     font-size: 30px;
-
+    text-transform: uppercase;
 }
 
-h2{
-    font-size: 100px;
+nav a{
+    text-decoration: none;
+    color: white;
 }
 
-.the_weeknd{
-    height: 100vh;
-    width: 100%;
-    border: solid 3px red;
-    display: flex;
-    position:relative;
-    color: lightgrey;
+nav a:hover{
+    text-decoration: none;
+    color: white;
 }
 
-.the_weeknd h2{
-    position: absolute;
-    bottom: 10px;
-    right: 10%;
+.logo{
+    height: 35vh;
 }
 
-.the_weeknd_image_container{
-    height: 500px;
-    width: 500px;
-    background-color: lightgrey;
-    transform: translate(25%, 25%);
+.logo img{
+    height: 200px;
+    width: 200px;
+    transform: translateX(-50%);
 }
 
-.the_weeknd img{
-    height: 300px;
-    width: 300px;
+.weeknd{
+    height: 60vh;
 }
 
+.weeknd h3{
+    color:white;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.weeknd p{
+    color:lightgray;
+    font-size:15px;
+}
+.title{
+    height: 15vh;
+}
+
+.title h2{
+    font-size:90px;
+    color: lightgray;
+    /* color:rgba(77, 77, 77, 0.774); */
+}
 .album-container{
-    width: 50%;
-    height: 100%;
+    height: 90vh;
+}
+.img-container{
+    height: 85vh;
 }
 
-.album{
-    height: 100vh;
-    width: 100%;
-    border: solid 3px lightpink;
-    position: relative;
-    display: flex;
-    color: lightgrey;
+.afterhours{
+    height: 85vh;
 }
 
-.album_image_container{
-    height: 500px;
-    width: 500px;
-    background-color: lightgrey;
-    transform: translate(25%, 25%);
-}
-
-.album img{
-    height: 300px;
-    width: 300px;
-}
-
-.album h2{
-    position: absolute;
-    bottom: 10px;
-    right: 65%;
-}
-.track{
-    width: 50%;
+.afterhours h3{
     text-align: center;
+    font-size:50px;
+    margin-top:30%;
 }
 
-.track h3{
- font-size:40px;
- margin-top:10%;
- margin-bottom: 55px;
+.afterhours p{
+    font-size:30px;
+    text-align: center;
+    margin-top:50px;
 }
 
-.track li{
-    font-size: 25px;
-    line-height: 30px;
+.afterhours p:last-child{
+    text-align: right;
+    margin-right: 10%;
 }
 
-.tour{
-    height: 100vh;
-    width: 100%;
-    border: solid 3px coral;
-    position: relative;
-    color: lightgrey;
+.news-container{
+    height: 90vh;
+    justify-content: space-evenly;
+    display: flex;
 }
 
-.tour h2{
-    position: absolute;
-    bottom: 10px;
-    right: 70%;
+.news{
+    background-color:red;
+    height: 60%;
+    margin-top:10%;
+    
 }
 
-.tour_container{
-    width: 80%;
-    height: 70vh;
-    padding-top:15vh;
-    margin-left: 10%;
+.date-container{
+    height: 74vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.date_container{
-    height: 20vh;
-    width: 40%;
-    border: solid 3px red;
-   
+    margin-top:15vh;
 }
 
 .date{
-    font-size: 50px;
+    width: 40%;
 }
 
-.place{
-    font-size: 30px;
+.date p{
+    font-size:30px;
+}
+
+.more-date{
+    font-size:25px;
 }
 
 .shop{
-    height: 100vh;
-    width: 100%;
-    border: solid 3px lightblue;
-    position: relative;
-    color: lightgrey;
-}
-
-.shop_preview{
-    position: absolute;
-    height: 306px;
-    width: 90%;
-    top: 25%;
-    left: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    height: 90vh;
 }
 
-.shop_preview img{
-    min-height: 300px;
-    min-width: 300px;
-    border: solid red 3px;
-    background-color: lightgrey;
+.square{
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    margin-top:45vh;
+    transform: translateY(-50%);
 }
 
-.shop h2{
-    position: absolute;
-    bottom: 10px;
-    right: 70%;
-}
-
-.insta{
-    height: 100vh;
-    width: 100%;
-    border: solid 3px purple;
-    position: relative;
-    color: lightgrey;
-}
-
-.insta h2{
-    position: absolute;
-    bottom: 10px;
-    right: 60%;
-}
-
-.insta_latest_post{
-    position: absolute;
-    height: 306px;
-    width: 90%;
-    top: 25%;
-    left: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.insta_latest_post img{
-    min-height: 300px;
-    min-width: 300px;
-    border: solid red 3px; 
-    background-color: lightgrey;
-}
-
-footer{
+.footer{
     height: 10vh;
-    width: 100%;
-    background-color: white;
 }
 
-footer p{
-    font-size: 50px;
-    background-color: white;
+.footer p{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
 }
