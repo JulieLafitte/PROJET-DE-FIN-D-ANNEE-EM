@@ -11,16 +11,72 @@ html{
     margin:0px;
 }
 
+.nav{
+background-color: black;
+
+}
 .white{
-    height: 110vh;
-    
+    min-height: 100vh;
+    padding:0;    
 }
 
 .black{
-    height: 110vh;
+    min-height: 100vh;
     background-color: black;
+    padding:0;
+}
+/* 
+nav mobile  */
+.wrapp{
+    position: fixed;
+    top:0;
+    overflow: hidden;
+    max-width: 100%;
+    z-index: 100;
+    min-height: 10vh;
+    padding: 0;
 }
 
+.wrapp img{
+    width: 50px;
+}
+
+.hamb{
+    color:white;
+    font-size:50px;
+    padding:0;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-checkbox:checked ~ .menu {
+    display: block;
+}
+.menu-checkbox:checked ~ .menu {
+    display: block;
+}
+.menu-checkbox {
+	opacity: 0;
+	position: absolute;
+	top: -1000px;
+}
+.menu li{
+    min-height: 40px;
+}
+.menu li a{
+    font-size:20px;
+    color:white;
+}
+.logo-nav{
+    position: absolute;
+    top:10%;
+    left: 40%;
+    
+}
+/* FIN NAV MOBILE */
+/* /HEADER */
 .header{
     background-color: lightgray;
 }
@@ -67,6 +123,15 @@ nav a:hover{
     color: white;
 }
 
+.header-illu{
+    width: 100%;
+    height: 90vh;
+    padding-top:10vh;
+}
+
+/* fin du header  */
+/* THE WEEKND */
+
 .logo{
     height: 35vh;
 }
@@ -76,35 +141,72 @@ nav a:hover{
     width: 200px;
     transform: translateX(-50%);
 }
+.weeknd-illu{
+    width: 100%;
+    height: 50vh;
+    background-color:red;
+}
+
 
 .weeknd{
-    height: 60vh;
+    padding-top: 20px;;
+    background-color: white;
+    text-align: center;
 }
 
 .weeknd h3{
-    color:white;
+    color:black;
     font-size: 35px;
     text-transform: uppercase;
 }
 
 .weeknd p{
-    color:lightgray;
+    color:black;
     font-size:15px;
 }
+
+
 .title{
     height: 15vh;
 }
 
 .title h2{
-    font-size:90px;
+    font-size:50px;
     color: lightgray;
-    /* color:rgba(77, 77, 77, 0.774); */
+    text-transform: uppercase;
 }
+
+/* Reveal */
+
+.reveal
+{
+    transform: translateY(15vh);
+    opacity: 0;
+}
+
+.reveal.revealed
+{
+    transform: translateY(0vh);
+    opacity: 1;
+    transition: transform 0.5s cubic-bezier(0, 0, 0, 1), opacity 0.5s;
+    will-change: transform, opacity;
+}
+
+/* FIN THE WEEKEND */
+/* DEBUT ALBUM */
+
 .album-container{
-    height: 90vh;
+    height: 85vh;
 }
+
 .img-container{
     height: 85vh;
+}
+
+.img-container img{
+    height: 60vh;
+    margin-left: 150px;
+    margin-top: 120px;
 }
 
 .afterhours{
@@ -128,42 +230,61 @@ nav a:hover{
     margin-right: 10%;
 }
 
+/* FIN ALBUM */
+/* DEBUT NEWS */
+
 .news-container{
-    height: 90vh;
+    min-height: 85vh;
     justify-content: space-evenly;
     display: flex;
+    padding-bottom: 30px;;
 }
 
 .news{
     background-color:red;
-    height: 60%;
-    margin-top:10%;
-    
+    height: 40vh;
+    width: 80%;
+    margin-top:10%;  
 }
 
+.mobile-title{
+    font-size:50px;
+    width: 100%;
+    text-align: center;
+}
+
+/* FIN NEWS */
+/* DEBUT TOURNEE */
+
 .date-container{
-    height: 74vh;
+    height: 75vh;
     display: flex;
     flex-wrap: wrap;
-    margin-top:15vh;
+    text-align: center;
 }
 
 .date{
-    width: 40%;
+    width: 100%;
 }
 
 .date p{
     font-size:30px;
+    margin-bottom: 0px;
 }
 
 .more-date{
+    height: 10vh;
     font-size:25px;
+    margin-bottom: 0;
 }
+
+/* FIN TOURNEE */
+/* DEBUT SHOP */
 
 .shop{
     display: flex;
     justify-content: space-evenly;
-    height: 90vh;
+    height: 85vh;
 }
 
 .square{
@@ -174,6 +295,8 @@ nav a:hover{
     transform: translateY(-50%);
 }
 
+/* FIN SHOP */
+
 .footer{
     height: 10vh;
 }
@@ -182,4 +305,46 @@ nav a:hover{
     text-align: center;
     font-size: 18px;
     padding-top: 10px;
+}
+
+                    /* Admin page */
+
+.background{
+    background-color: black;
+}
+
+.admin-logo img{
+    margin-left: 50px;
+}
+
+.admin-title{
+    height: 20vh;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    margin-left: 200px;
+}
+
+.admin-dates{
+    min-height: 60vh;
+}
+
+@media (min-width: 768px) {
+    .weeknd{
+        background-color: black;
+        height: 50vh;
+        
+    }
+    .weeknd p{
+        color:white;
+    }
+    .weeknd h3{
+        color:white;
+    }
+
+    .title h2{
+        font-size:90px;
+    }
 }
