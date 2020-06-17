@@ -1,4 +1,15 @@
 /**
+ * Nav color animation
+ */
+
+$(".nav-link").hover(function(){
+    $('.nav-link').css("color", "grey");
+    $(this).css("color","white");
+},function(){
+    $('.nav-link').css("color","white");
+});
+
+/**
  * Reveal
  */
 

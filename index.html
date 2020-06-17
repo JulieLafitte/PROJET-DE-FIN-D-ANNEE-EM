@@ -9,10 +9,12 @@
 
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="dist/fullpage.css">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="60x60" href="favicon_package_v0.16/apple-touch-icon.png">
@@ -27,378 +29,392 @@
 
 <body>
     
-    <header>
+    <div id="fullpage">
 
-        <div class="row">
+        <header class="section">
 
-            <div class="col-md-1 black icones d-none d-md-flex">
+            <div class="row">
 
-                <img src="assets/icones/emoticone-facebook-blanc.svg" alt="Icone facebook">
-                <img src="assets/icones/emoticone-twitter-blanc.svg" alt="Icone twitter">
-                <img src="assets/icones/emoticone-insta-blanc.svg" alt="Icone instagram">
-                <img src="assets/icones/emoticone-spotify-blanc.svg" alt="Icone spotify">
-                <img src="assets/icones/emoticone-apple-blanc.svg" alt="Icone apple music">
+                <div class="col-md-1 black icones d-none d-md-flex">
 
+                <a href="https://www.facebook.com/theweeknd/"><img src="assets/icones/emoticone-facebook-blanc.svg" alt="Icone facebook"></a>
+                <a href="https://twitter.com/theweeknd"><img src="assets/icones/emoticone-twitter-blanc.svg" alt="Icone twitter"></a>
+                    <img src="assets/icones/emoticone-insta-blanc.svg" alt="Icone instagram">
+                <a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"><img src="assets/icones/emoticone-spotify-blanc.svg" alt="Icone spotify"></a>
+                <a href="https://music.apple.com/fr/artist/the-weeknd/479756766"><img src="assets/icones/emoticone-apple-blanc.svg" alt="Icone apple music"></a>
+
+                </div>
+
+                <div class="col-md-11  d-none d-md-block white header">
+
+                    <div class="row">
+
+                        <div class="col-md-12 logo-header">
+                            <img src="assets/icones/logo-blanc.svg" alt="logo">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 offset-md-8">
+                        <nav>
+                            <p><a class="nav-link" href="#artiste">Artiste</a></p>
+                            <p><a class="nav-link" href="#album">Album</a></p>
+                            <p><a class="nav-link" href="#actu">Actualitées</a></p>
+                            <p><a class="nav-link" href="#tour">Tournée</a></p>
+                            <p><a class="nav-link" href="#shop">Shop</a></p>
+                        </nav>
+                    </div>
+
+                </div>
+
+                <div class="col-12 d-md-none wrapp">
+                    <div class="row d-flex align-items-center nav">
+                        
+                        <div class="col-6 hamb">
+                            <input type="checkbox" class="menu-checkbox" id="menu-checkbox"/> 
+                            <label for="menu-checkbox" class="menu-toggle">≡</label>
+                            <ul class="menu">
+                                <li><a href="#artiste">Artiste</a></li>
+                                <li><a href="#album">Album</a></li>
+                                <li><a href="#actu">Actualitées</a></li>
+                                <li><a href="#tour">Tournée</a></li>
+                                <li><a href="#shop">Shop</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4 logo-nav"><img src="assets/icones/logo-blanc.svg" alt=""></div>
+                    </div>
+                </div>
             </div>
+            <div class="row d-md-none">
+                <div class="col-12 header-illu">
+                    
+                </div>
+            </div>
+            
+        </header>
 
-            <div class="col-md-11  d-none d-md-block white header">
+        <main>
+
+            <!-- Artiste -->
+            <section class="section" id="artiste">
 
                 <div class="row">
 
-                    <div class="col-md-12 logo-header">
-                        <img src="assets/icones/logo-blanc.svg" alt="logo">
+                    <div class="col-md-1 white icones d-none d-md-flex">
+
+                        <img src="assets/icones/emoticone-facebook-noir.svg" alt="Icone facebook">
+                        <img src="assets/icones/emoticone-twitter-noir.svg" alt="Icone twitter">
+                        <img src="assets/icones/emoticone-insta-noir.svg" alt="Icone instagram">
+                        <img src="assets/icones/emoticone-spotify-noir.svg" alt="Icone spotify">
+                        <img src="assets/icones/emoticone-apple-noir.svg" alt="Icone apple music">
+
+                    </div>
+
+                    <div class="col-md-11 black small-week">
+
+                        <div class="row ">
+
+                            <div class="offset-md-6 logo d-none d-md-block">
+                                <img src="assets/icones/logo-blanc.svg" alt="logo">
+                            </div>
+                            <div class="col-12 weeknd-illu d-md-none">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-12 col-md-4 offset-md-1 weeknd">
+
+                                <h3>the weeknd</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi quos dolores
+                                    maiores soluta perspiciatis ea sunt aliquid id repellendus cumque, excepturi commodi
+                                    doloremque officiis, architecto porro fuga totam unde.</p>
+
+                            </div>
+
+                            <div class="col-12 weeknd-illu d-md-none">
+                                <img src="assets/pochette-album-face.jpg" alt="Pochette de l'album After Hours">
+                            </div>
+                            <div class="col-12 col-md-4 offset-md-2 weeknd">
+
+                                <h3>after hours</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloribus deleniti sit
+                                    ipsam numquam autem iusto magnam possimus iste quo tenetur iure hic rem nobis, tempore
+                                    provident repudiandae. Exercitationem, ab?</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="d-none col-12 title d-md-flex align-items-end justify-content-end">
+
+                                <h2 class="reveal">the weeknd</h2>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
 
-                <div class="col-md-12">
-                    <nav>
-                        <p><a href="#artiste">Artiste</a></p>
-                        <p><a href="#album">Album</a></p>
-                        <p><a href="#actu">Actualitées</a></p>
-                        <p><a href="#tour">Tournée</a></p>
-                        <p><a href="#shop">Shop</a></p>
-                    </nav>
-                </div>
+            </section>
 
-            </div>
+            <!-- Album -->
+            <section class="section" id="album">
 
-            <div class="col-12 d-md-none wrapp">
-                <div class="row d-flex align-items-center nav">
-                    
-                    <div class="col-6 hamb">
-                        <input type="checkbox" class="menu-checkbox" id="menu-checkbox"/> 
-                        <label for="menu-checkbox" class="menu-toggle">≡</label>
-                        <ul class="menu">
-                            <li><a href="#artiste">Artiste</a></li>
-                            <li><a href="#album">Album</a></li>
-                            <li><a href="#actu">Actualitées</a></li>
-                            <li><a href="#tour">Tournée</a></li>
-                            <li><a href="#shop">Shop</a></li>
-                        </ul>
+                <div class="row d-none d-md-flex">
+
+                    <div class="col-md-1 black icones d-none d-md-flex">
+
+                        <img src="assets/icones/emoticone-facebook-blanc.svg" alt="Icone facebook">
+                        <img src="assets/icones/emoticone-twitter-blanc.svg" alt="Icone twitter">
+                        <img src="assets/icones/emoticone-insta-blanc.svg" alt="Icone instagram">
+                        <img src="assets/icones/emoticone-spotify-blanc.svg" alt="Icone spotify">
+                        <img src="assets/icones/emoticone-apple-blanc.svg" alt="Icone apple music">
+
                     </div>
-                    <div class="col-4 logo-nav"><img src="assets/icones/logo-blanc.svg" alt=""></div>
+
+                    <div class="col-md-11 white">
+
+                        <div class="row album-container">
+
+                            <div class="col-md-1 logo-header">
+                                <img src="assets/icones/logo-noir.svg" alt="logo">
+                            </div>
+
+                            <div class="col-md-5">
+
+                                <div class="img-container">
+                                    <img src="assets/pochette-album-face.jpg" alt="Pochette d'album AFTER HOURS">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="afterhours">
+
+                                    <h3>AFTER HOURS</h3>
+                                    <p><b>LE 11 / 11 / 2020 </b></p>
+                                    <p>Écouter ></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="title d-flex align-items-end">
+
+                                <h2 class="reveal">album</h2>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
-            </div>
-        </div>
-        <div class="row d-md-none">
-            <div class="col-12 header-illu">
 
-            </div>
-        </div>
-        
-    </header>
+            </section>
 
-    <main>
+            <!-- Actualitées -->
+            <section class="section" id="actu">
 
-        <!-- Artiste -->
-        <section id="artiste">
+                <div class="row">
 
+                    <div class="col-md-1 white icones d-none d-md-flex">
+
+                        <img src="assets/icones/emoticone-facebook-noir.svg" alt="Icone facebook">
+                        <img src="assets/icones/emoticone-twitter-noir.svg" alt="Icone twitter">
+                        <img src="assets/icones/emoticone-insta-noir.svg" alt="Icone instagram">
+                        <img src="assets/icones/emoticone-spotify-noir.svg" alt="Icone spotify">
+                        <img src="assets/icones/emoticone-apple-noir.svg" alt="Icone apple music">
+
+                    </div>
+
+                    <div class="col-md-11 black">
+
+                        <div class="row news-container">
+
+                            <div class="col-md-3 news">
+
+                            </div>
+                            <div class="col-md-3 news">
+
+                            </div>
+                            <div class="col-md-3 news">
+
+                            </div>
+
+                        </div>
+
+                        <div class="row d-none d-md-block">
+
+                            <div class="d-none col-12 title d-md-flex align-items-end justify-content-end">
+                                <h2 class="reveal">Actualitées</h2>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Tournée -->
+            <section class="section" id="tour">
+
+                <div class="row">
+
+                    <div class="col-md-1 black icones d-none d-md-flex">
+
+                        <img src="assets/icones/emoticone-facebook-blanc.svg" alt="Icone facebook">
+                        <img src="assets/icones/emoticone-twitter-blanc.svg" alt="Icone twitter">
+                        <img src="assets/icones/emoticone-insta-blanc.svg" alt="Icone instagram">
+                        <img src="assets/icones/emoticone-spotify-blanc.svg" alt="Icone spotify">
+                        <img src="assets/icones/emoticone-apple-blanc.svg" alt="Icone apple music">
+
+                    </div>
+
+                    <div class="col-md-11 white">
+
+                        <div class="row">
+                            
+                            <div class="col-12  date-container d-flex align-items-center">
+                                <h2 class="mobile-title d-md-none">Tournée</h2>
+                                <div class="date col-md-6">
+                                    <p><b>00/00/2020</b></p>
+                                    <p>Lieu de la tournée</p>
+                                </div>
+
+                                <div class="date col-md-6">
+                                    <p><b>00/00/2020</b></p>
+                                    <p>Lieu de la tournée</p>
+                                </div>
+
+                                <div class="date col-md-6">
+                                    <p><b>00/00/2020</b></p>
+                                    <p>Lieu de la tournée</p>
+                                </div>
+
+                                <div class="date col-md-6">
+                                    <p><b>00/00/2020</b></p>
+                                    <p>Lieu de la tournée</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4 col-md-8">
+
+                            </div>
+                            <div class="col-8 col-md-4">
+                            <a href="https://www.fnacspectacles.com/place-spectacle/ticket-evenement/r-n-b-soul-funk-the-weeknd-manahwee-lt.htm"><p class="more-date">Voir plus de dates > </p></a>
+                            </div>
+
+                        </div>
+
+                        <div class="row d-none d-md-block">
+
+                            <div class="title d-flex align-items-end">
+                                <h2 class="reveal">tournée</h2>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Shop -->
+            <section class="section" id="shop">
+
+                <div class="row">
+
+                    <div class="col-md-1 white icones d-none d-md-flex">
+
+                        <img src="assets/icones/emoticone-facebook-noir.svg" alt="Icone facebook">
+                        <img src="assets/icones/emoticone-twitter-noir.svg" alt="Icone twitter">
+                        <img src="assets/icones/emoticone-insta-noir.svg" alt="Icone instagram">
+                        <img src="assets/icones/emoticone-spotify-noir.svg" alt="Icone spotify">
+                        <img src="assets/icones/emoticone-apple-noir.svg" alt="Icone apple music">
+
+                    </div>
+
+                    <div class="col-md-11 black">
+
+                        <div class="row">
+
+                            <div class="col-md-12 shop">
+
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="d-none col-12 title d-md-flex align-items-end justify-content-end">
+                                <h2 class="reveal">shop</h2>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="section">
+            
             <div class="row">
 
-                <div class="col-md-1 white icones d-none d-md-flex">
+                <div class="col-12 d-md-none icones d-flex justify-content-evenly">
 
-                    <img src="assets/icones/emoticone-facebook-noir.svg" alt="Icone facebook">
-                    <img src="assets/icones/emoticone-twitter-noir.svg" alt="Icone twitter">
+                    <a href="https://www.facebook.com/theweeknd/"><img src="assets/icones/emoticone-facebook-noir.svg" alt="Icone facebook"></a>
+                <a href="https://twitter.com/theweeknd"><img src="assets/icones/emoticone-twitter-noir.svg" alt="Icone twitter"></a>
                     <img src="assets/icones/emoticone-insta-noir.svg" alt="Icone instagram">
-                    <img src="assets/icones/emoticone-spotify-noir.svg" alt="Icone spotify">
-                    <img src="assets/icones/emoticone-apple-noir.svg" alt="Icone apple music">
+                <a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"><img src="assets/icones/emoticone-spotify-noir.svg" alt="Icone spotify"></a>
+                <a href="https://music.apple.com/fr/artist/the-weeknd/479756766"><img src="assets/icones/emoticone-apple-noir.svg" alt="Icone apple music"></a>
 
                 </div>
 
-                <div class="col-md-11 black small-week">
+                <div class="col-md-12 footer">
 
-                    <div class="row ">
-
-                        <div class="offset-md-6 logo d-none d-md-block">
-                            <img src="assets/icones/logo-blanc.svg" alt="logo">
-                        </div>
-                        <div class="col-12 weeknd-illu d-md-none">
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-12 col-md-4 offset-md-1 weeknd">
-
-                            <h3>the weeknd</h3>
-
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi quos dolores
-                                maiores soluta perspiciatis ea sunt aliquid id repellendus cumque, excepturi commodi
-                                doloremque officiis, architecto porro fuga totam unde.</p>
-
-                        </div>
-
-                        <div class="col-12 weeknd-illu d-md-none">
-
-                        </div>
-                        <div class="col-12 col-md-4 offset-md-2 weeknd">
-
-                            <h3>after hours</h3>
-
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloribus deleniti sit
-                                ipsam numquam autem iusto magnam possimus iste quo tenetur iure hic rem nobis, tempore
-                                provident repudiandae. Exercitationem, ab?</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="d-none offset-md-7 title d-md-flex align-items-end">
-
-                            <h2 class="reveal">the weeknd</h2>
-
-                        </div>
-
-                    </div>
+                    <p>
+                        <a href="">Mentions légales</a> | <a href="">Plan du site</a> | Label XO et <a
+                            href="http://www.republicrecords.com/">Republic Records</a>
+                    </p>
+                    <p>Copyright 2020</p>
 
                 </div>
 
             </div>
 
-        </section>
+        </footer>
 
-        <!-- Album -->
-        <section id="album" >
-
-            <div class="row d-none d-md-flex">
-
-                <div class="col-md-1 black icones d-none d-md-flex">
-
-                    <img src="assets/icones/emoticone-facebook-blanc.svg" alt="Icone facebook">
-                    <img src="assets/icones/emoticone-twitter-blanc.svg" alt="Icone twitter">
-                    <img src="assets/icones/emoticone-insta-blanc.svg" alt="Icone instagram">
-                    <img src="assets/icones/emoticone-spotify-blanc.svg" alt="Icone spotify">
-                    <img src="assets/icones/emoticone-apple-blanc.svg" alt="Icone apple music">
-
-                </div>
-
-                <div class="col-md-11 white">
-
-                    <div class="row album-container">
-
-                        <div class="col-md-1 logo-header">
-                            <img src="assets/icones/logo-noir.svg" alt="logo">
-                        </div>
-
-                        <div class="col-md-5">
-
-                            <div class="img-container">
-                                <img src="assets/pochette-album-face.jpg" alt="Pochette d'album AFTER HOURS">
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-6">
-
-                            <div class="afterhours">
-
-                                <h3>AFTER HOURS</h3>
-                                <p><b>LE 11 / 11 / 2020 </b></p>
-                                <p>Écouter ></p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="title d-flex align-items-end">
-
-                            <h2 class="reveal">album</h2>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Actualitées -->
-        <section id="actu">
-
-            <div class="row">
-
-                <div class="col-md-1 white icones d-none d-md-flex">
-
-                    <img src="assets/icones/emoticone-facebook-noir.svg" alt="Icone facebook">
-                    <img src="assets/icones/emoticone-twitter-noir.svg" alt="Icone twitter">
-                    <img src="assets/icones/emoticone-insta-noir.svg" alt="Icone instagram">
-                    <img src="assets/icones/emoticone-spotify-noir.svg" alt="Icone spotify">
-                    <img src="assets/icones/emoticone-apple-noir.svg" alt="Icone apple music">
-
-                </div>
-
-                <div class="col-md-11 black">
-
-                    <div class="row news-container">
-
-                        <div class="col-md-3 news">
-
-                        </div>
-                        <div class="col-md-3 news">
-
-                        </div>
-                        <div class="col-md-3 news">
-
-                        </div>
-
-                    </div>
-
-                    <div class="row d-none d-md-block">
-
-                        <div class="offset-md-7 title d-flex align-items-end">
-                            <h2 class="reveal">Actualitées</h2>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Tournée -->
-        <section id="tour">
-
-            <div class="row">
-
-                <div class="col-md-1 black icones d-none d-md-flex">
-
-                    <img src="assets/icones/emoticone-facebook-blanc.svg" alt="Icone facebook">
-                    <img src="assets/icones/emoticone-twitter-blanc.svg" alt="Icone twitter">
-                    <img src="assets/icones/emoticone-insta-blanc.svg" alt="Icone instagram">
-                    <img src="assets/icones/emoticone-spotify-blanc.svg" alt="Icone spotify">
-                    <img src="assets/icones/emoticone-apple-blanc.svg" alt="Icone apple music">
-
-                </div>
-
-                <div class="col-md-11 white">
-
-                    <div class="row">
-                        
-                        <div class="col-12  date-container d-flex align-items-center">
-                            <h2 class="mobile-title d-md-none">Tournée</h2>
-                            <div class="date col-md-6">
-                                <p><b>00/00/2020</b></p>
-                                <p>Lieu de la tournée</p>
-                            </div>
-
-                            <div class="date col-md-6">
-                                <p><b>00/00/2020</b></p>
-                                <p>Lieu de la tournée</p>
-                            </div>
-
-                            <div class="date col-md-6">
-                                <p><b>00/00/2020</b></p>
-                                <p>Lieu de la tournée</p>
-                            </div>
-
-                            <div class="date col-md-6">
-                                <p><b>00/00/2020</b></p>
-                                <p>Lieu de la tournée</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-4 col-md-8">
-
-                        </div>
-                        <div class="col-8 col-md-4">
-                          <a href="https://www.fnacspectacles.com/place-spectacle/ticket-evenement/r-n-b-soul-funk-the-weeknd-manahwee-lt.htm"><p class="more-date">Voir plus de dates > </p></a>
-                        </div>
-
-                    </div>
-
-                    <div class="row d-none d-md-block">
-
-                        <div class="title d-flex align-items-end">
-                            <h2 class="reveal">tournée</h2>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Shop -->
-        <section id="shop">
-
-            <div class="row">
-
-                <div class="col-md-1 white icones d-none d-md-flex">
-
-                    <img src="assets/icones/emoticone-facebook-noir.svg" alt="Icone facebook">
-                    <img src="assets/icones/emoticone-twitter-noir.svg" alt="Icone twitter">
-                    <img src="assets/icones/emoticone-insta-noir.svg" alt="Icone instagram">
-                    <img src="assets/icones/emoticone-spotify-noir.svg" alt="Icone spotify">
-                    <img src="assets/icones/emoticone-apple-noir.svg" alt="Icone apple music">
-
-                </div>
-
-                <div class="col-md-11 black">
-
-                    <div class="row">
-
-                        <div class="col-md-12 shop">
-
-                            <div class="square"></div>
-                            <div class="square"></div>
-                            <div class="square"></div>
-                            <div class="square"></div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="offset-md-9 title d-flex align-items-end">
-                            <h2 class="reveal">shop</h2>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <div class="row">
-
-            <div class="col-md-12 footer">
-
-                <p>
-                    <a href="">Mentions légales</a> | <a href="">Plan du site</a> | Label XO et <a
-                        href="http://www.republicrecords.com/">Republic Records</a>
-                </p>
-                <p>Copyright 2020</p>
-
-            </div>
-
-        </div>
-
-    </footer>
+    </div>    
 
     <!-- Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -413,6 +429,22 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script src="dist/fullpage.min.js"></script>
+    <script src="dist/fullpage.extensions.min.js"></script>
+    <script>
+        /**
+         * Fullpage
+         */
+
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling:true,
+            // scrollHorizontally: true
+        });
+
+        //methods
+        fullpage_api.setAllowScrolling(false);
+    </script>
 
 </body>
 
