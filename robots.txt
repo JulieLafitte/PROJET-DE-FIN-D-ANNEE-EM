@@ -5,4 +5,4 @@ Disallow: /data/
 Disallow: /plugins/
 Allow: /data/uploads/
 
-Sitemap: http://robots-txt.com/sitemap.xml
+Sitemap: http://julielafitte.alwaysdata.net//sitemap.xml
