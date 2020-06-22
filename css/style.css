@@ -20,14 +20,21 @@ background-color: black;
 
 }
 .white{
+    width: 100%;
     min-height: 100vh;
     padding:0;    
 }
 
 .black{
+    width: 100%;
     min-height: 100vh;
     background-color: black;
     padding:0;
+}
+
+.last-div{
+    min-height: 90vh;
+    max-height: 90vh;
 }
 /* 
 nav mobile  */
@@ -82,7 +89,9 @@ nav mobile  */
 /* FIN NAV MOBILE */
 /* /HEADER */
 .header{
-    background-color: lightgray;
+    background-image: url("../assets/affiche-paysage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .icones{
@@ -93,13 +102,15 @@ nav mobile  */
 }
 
 .icones img{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 .logo-header img{
     height: 200px;
     width: 200px;
+    margin-top: 40px;
+    margin-left: 100px;
 }
 
 nav{
@@ -127,12 +138,13 @@ nav a:hover{
 }
 
 .header-illu{
-    background-image: url("../assets/affiche-portrait.jpg");
+    background-image: url("../assets/AF537944.jpg");
     background-size: 100% 90vh;
     background-repeat: no-repeat;
     width: 100%;
     height: 90vh;
     margin-top:10vh;
+    padding: 0;
 }
 
 /* fin du header  */
@@ -145,12 +157,14 @@ nav a:hover{
 .logo img{
     height: 200px;
     width: 200px;
+    margin-top: 40px;
     transform: translateX(-50%);
 }
 .weeknd-illu{
     width: 100%;
     height: 50vh;
-    background-color:red;
+    background-image: url("/assets/theweeknd.jpg");
+    background-size: cover;
     padding: 0;
 }
 
@@ -171,11 +185,13 @@ nav a:hover{
     font-family: Arial;
     font-size: 35px;
     text-transform: uppercase;
+    margin-bottom:30px;
 }
 
 .weeknd p{
     color:black;
     font-size:15px;
+    text-align: left;
 }
 
 
@@ -191,14 +207,12 @@ nav a:hover{
 
 /* Reveal */
 
-.reveal
-{
+.reveal{
     transform: translateY(15vh);
     opacity: 0;
 }
 
-.reveal.revealed
-{
+.reveal.revealed{
     transform: translateY(0vh);
     opacity: 1;
     transition: transform 0.5s cubic-bezier(0, 0, 0, 1), opacity 0.5s;
@@ -222,6 +236,43 @@ nav a:hover{
     margin-top: 120px;
 }
 
+.flip-card {
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    color: black;
+}
+  
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
 .afterhours{
     height: 85vh;
 }
@@ -229,19 +280,28 @@ nav a:hover{
 .afterhours h3{
     text-align: center;
     font-family: Geomancy;
-    font-size:50px;
+    font-size:70px;
     margin-top:30%;
 }
 
 .afterhours p{
-    font-size:30px;
+    font-size:40px;
     text-align: center;
     margin-top:50px;
+}
+
+.afterhours a{
+    font-size: 20px;
+    
 }
 
 .afterhours p:last-child{
     text-align: right;
     margin-right: 10%;
+}
+
+.ecouter{
+    margin-left: 67%;
 }
 
 /* FIN ALBUM */
@@ -254,12 +314,34 @@ nav a:hover{
     padding-bottom: 30px;;
 }
 
-.news{
-    background-color:red;
-    height: 40vh;
-    width: 80%;
-    margin-top:10%;  
+.instagram_profile{
+    margin-top: 40px;
 }
+
+.instagram_username{
+    color: white;
+}
+
+.instagram_gallery{
+ 
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  
+
+}
+
+.instagram-sidecar{
+    width: 100% !important ;
+}
+
+.instagram-sidecar img{
+    width: 100% !important;
+
+    
+}
+
 
 .mobile-title{
     font-size:50px;
@@ -273,7 +355,7 @@ nav a:hover{
 /* DEBUT TOURNEE */
 
 .date-container{
-    height: 75vh;
+    min-height: 75vh;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -287,6 +369,10 @@ nav a:hover{
 .date p{
     font-size:30px;
     margin-bottom: 0px;
+}
+
+.dates-link{
+    min-height: 10vh;
 }
 
 .more-date{
@@ -328,6 +414,7 @@ nav a:hover{
 
 .background{
     background-color: black;
+    width: 100%;
 }
 
 .admin-logo img{
@@ -349,18 +436,45 @@ h1{
 }
 
 @media (min-width: 768px) {
+
+   
+    .instagram-sidecar{
+        width: 30% !important;
+    }
+    .instagram-sidecar:nth-of-type(2){
+        margin-left:5%;
+        margin-right: 5%;
+    }
+    .instagram-sidecar img{
+        width: 100% !important;
+    
+        
+    }
+    .black{
+        width: 96%;
+    }
+    .white{
+        width: 96%;
+    }
+    .nav-link{
+        transition: color 0.5s;
+    }
     .weeknd{
         background-color: black;
         height: 50vh;
         
     }
     .weeknd p{
+        width: 380px;
         color:white;
+        text-align: left;
+        margin-left: 40px;
     }
     .weeknd h3{
         color:white;
+        font-size: 60px;
+        margin-bottom: 30px;
     }
-
     .title h2{
         font-size: 80px;
         line-height:45px;
@@ -368,6 +482,7 @@ h1{
         padding-left: 60px;
     }
     .icones{
+        width: 4%;
         flex-direction: column;
         margin-top: 0;
         margin-bottom: 0;
@@ -375,5 +490,198 @@ h1{
     .icones img{
     margin-left: 50%;
     transform: translateX(-50%);
+    }
+}
+
+.MultiCarousel { 
+    float: left; 
+    overflow: hidden; 
+    padding: 15px; 
+    width: 100%; 
+    position:relative;  
+    height: 80%;
+    transform: translateY(40%);
+}
+.MultiCarousel .MultiCarousel-inner { 
+    transition: 1s ease all; 
+    float: left; 
+}
+.MultiCarousel .MultiCarousel-inner .item { 
+    float: left; 
+}
+.MultiCarousel .MultiCarousel-inner .item > div { 
+    text-align: center;
+    margin:10px; 
+    background:#f1f1f1; 
+    color:#666; 
+    height: 80%;
+}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+    position:absolute; 
+    border-radius:50%;
+    top:35%; 
+}
+.MultiCarousel .leftLst { 
+    left:0; 
+}
+.MultiCarousel .rightLst { 
+    right:0; 
+}
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
+    pointer-events: none; 
+    background:#ccc; 
+}
+.container{
+    height: 75vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width: 90vw !important;
+}
+.row2{
+    height: auto;
+    width: 100% !important;
+}
+.MultiCarousel-inner{
+    height: 100%;
+    width: 100%;
+}
+.item{
+    height: 50vh;
+    
+}
+
+.pad15 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* loginpage */
+
+.login-logo{
+    height: 10vh;
+}
+
+label{
+    margin-top: 10px;
+    width: 100px;
+}
+.loginform{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    
+}
+.submit-button{
+    margin-top: 20px;
+    
+}
+
+.login-wrapp{
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: 100vh;
+    padding-top:50px;
+}
+
+.login-wrapp img{
+    height: 30vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/* admin-page */
+
+.admin-logo{
+    padding-top: 20px;
+}
+.admin-logo img{
+    width: 90px;
+}
+
+.form{
+    width: 100%;
+    margin-left: 5%;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.form label{
+    margin-left:2%;
+    width: auto;
+}
+
+.form label:nth-of-type(1){
+    margin-left:0%;
+}
+
+.addbutton{
+    margin-left: 15px;
+}
+
+.admin-dates table{
+    border:1px solid white;
+    width: 90%;
+    margin-left: 5%;  
+    margin-bottom: 50px;
+}
+
+.admin-dates td{
+    padding: 10px;    
+}
+
+.date-cell{
+    width: 30%;
+    color:white;
+    font-size:25px;
+    margin-right:50px;
+}
+.date-cells a{
+    color:white;
+    text-decoration: none;
+    font-size:50px;
+    margin-left:20px;
+    margin-right: 10px;
+}
+
+.logout{
+    width: 15%;
+    margin-left: 80%;
+    padding-bottom: 60px;
+}
+
+.logout a{
+    color:white;
+    font-size: 30px;
+}
+
+
+
+@media (min-width: 768px) {
+    .admin-dates table{
+        border:1px solid white;
+        width: 90%;
+        margin-left: 5%;  
+        margin-bottom: 50px;
+    }
+    
+    .admin-dates td{
+        padding: 10px;    
+    }
+    
+    .date-cell{
+        width: 30%;
+        color:white;
+        font-size:25px;
+        margin-right:50px;
+    }
+    .date-cells a{
+        color:white;
+        text-decoration: none;
+        font-size:50px;
+        margin-left:100px;
+        margin-right: 10px;
     }
 }

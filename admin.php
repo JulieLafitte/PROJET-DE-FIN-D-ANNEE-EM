@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+    if(!isset($_SESSION['utilisateur'])){
+        header('location:login.php');
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +19,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 <body>
@@ -17,7 +36,7 @@
     <div class="background">
 
         <div class="row admin-logo">
-            <img src="assets/icones/logo-blanc.svg" alt="logo">
+           <a href="index.php"><img src="assets/icones/logo-blanc.svg" alt="logo"></a> 
         </div>
 
         <div class="row admin-title">
@@ -26,8 +45,47 @@
 
         <div class="row admin-dates">
             
-        </div>
+            <div class="col-12 ">
+                <div class=" form">
+                    <form action="add.php" method="POST">
+                        <label for="date">Date:</label>
+                        <input type="date" name="date" id="date" required>
+                        <label for="lieux"> Lieux:</label>
+                        <input type="text" name="lieux" id="lieux" required>
+                        <label for="heure">Heure:</label>
+                        <input type="text" id="heure" name="heure" required>
+                        <label for="salle">Salle:</label>
+                        <input type="text" name="salle" id="salle" required>
+                        <input type="submit" class="addbutton" value="ajouter">
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-12">
 
+            
+            <table>
+        <?php 
+           $bdd = new PDO('mysql:host=mysql-julielafitte.alwaysdata.net; dbname=julielafitte_theweeknd; charset=utf8', '209010', 'admin0902', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+
+            $tour = $bdd -> query("SELECT * FROM tour ORDER BY date ");
+            $x=0;
+            foreach($tour as $key => $value){
+                $x++;
+
+                if($x<1){
+                    echo("Il n'y à pas encore de dates prevue pour le moment");
+                }else{
+                    echo("<tr><td class=\"date-cell\">".$value['date']."</td><td class=\"date-cell\">".$value['location']."</td><td class=\"date-cell\">".$value['time']."</td><td class=\"date-cell\">".$value['place']."</td><td class=\"date-cells\"><a href=\"delete.php?id=".$value['id']."\">X </a></td></tr>");
+                }
+            }
+              ?>
+              </table>                          
+              </div>
+        </div>
+            <div class="logout">
+                <a href="logout.php">Se déconnecter</a>
+            </div>
     </div>
 
     <!-- Bootstrap-->
